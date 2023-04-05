@@ -34,13 +34,13 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "content/downloads.md"
         label: "Downloads"
-        name: "_downloads"
+        name: "downloads"
         editor: 
           preview: false
         fields:
           - { label: "Titel", name: "title", widget: "string" }
           - label: "Übersicht Downloads"
-            name: "downloads_" 
+            name: "downloads" 
             widget: "list" 
             summary: '{{fields.title}}' 
             fields:
@@ -49,9 +49,6 @@ collections:
              - { label: "Zuletzt aktualisiert", name: "lastUpdated", widget: "string" }
              - { label: "Download", name: "file", widget: "string" }
              - { label: "Kategorie", name: "category", widget: "string" }
-        fields:
-          - { label: "Titel", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
       - file: "content/erfa.md"
         label: "Erfa"
         name: "erfa"
@@ -99,3 +96,4 @@ collections:
                             
       
           
+        
