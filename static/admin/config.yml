@@ -42,7 +42,7 @@ collections:
           - label: "Übersicht Downloads"
             name: "downloads" 
             widget: "list" 
-            summary: '{{fields.title}}' 
+            summary: '{{fields.description}}' 
             fields:
              - { label: "Beschreibung", name: "description", widget: "string" }  
              - { label: "Besitzer", name: "owner", widget: "string" } 
