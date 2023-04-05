@@ -39,6 +39,18 @@ collections:
           preview: false
         fields:
           - { label: "Titel", name: "title", widget: "string" }
+          - label: "Downloads"
+            name: "downnloads" 
+            widget: "list" 
+            summary: '{{fields.title}}' 
+            fields:
+             - { label: "Beschreibung", name: "description", widget: "string" }  
+             - { label: "Besitzer", name: "owner", widget: "string" } 
+             - { label: "Zuletzt aktualisiert", name: "lastUpdated", widget: "string" }
+             - { label: "Download", name: "file", widget: "string" }
+             - { label: "Kategorie", name: "category", widget: "string" }
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "content/erfa.md"
         label: "Erfa"
