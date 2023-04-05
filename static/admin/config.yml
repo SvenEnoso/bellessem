@@ -47,7 +47,7 @@ collections:
              - { label: "Beschreibung", name: "description", widget: "string" }  
              - { label: "Besitzer", name: "owner", widget: "string" } 
              - { label: "Zuletzt aktualisiert", name: "lastUpdated", widget: "string" }
-             - { label: "Download", name: "file", widget: "string" }
+             - { label: "Download", name: "file", widget: "file" }
              - { label: "Kategorie", name: "category", widget: "string" }
       - file: "content/erfa.md"
         label: "Erfa"
