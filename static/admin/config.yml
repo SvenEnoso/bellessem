@@ -25,7 +25,7 @@ collections:
           - { label: "Titel", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" } 
       - file: "content/beratung.md"
-        label: "Beratungt"
+        label: "Beratung"
         name: "beratung"
         editor: 
           preview: false
