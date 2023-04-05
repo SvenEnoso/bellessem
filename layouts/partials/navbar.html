@@ -1,0 +1,40 @@
+<nav class="navbar">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle menuRed" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+
+      {{ .Scratch.Set "i" 0 }}
+      {{ .Scratch.Set "classString" "" }}
+
+      {{ range .Site.Menus.mainmenu}}
+
+      <!-- -->
+      {{ if or (eq ($.Scratch.Get "i") 8) (eq ($.Scratch.Get "i") 0)}} 
+      {{ if (eq ($.Scratch.Get "i") 8)}}<br>{{ end }}
+      {{ $.Scratch.Set "i" 0 }}
+      {{ $.Scratch.Set "classString" "menuRed"}}
+      {{ end }}
+      
+
+      {{if (eq ($.Scratch.Get "i") 3)}}
+        {{ $.Scratch.Set "classString" "menuOrange"}}
+        <br>
+      {{ end }}
+
+      {{if eq ($.Scratch.Get "i") 6}}
+        {{ $.Scratch.Set "classString" "menuYellow"}}
+        <br>
+      {{ end }}
+      {{ $.Scratch.Set "i" (add ($.Scratch.Get "i") 1) }}
+      <!--  -->
+      <li class='{{ $.Scratch.Get "classString" }}'><a href="{{.URL}}">{{ .Title}}</a></li>
+      {{ end }}
+      <br>
+  </div>
+</nav>

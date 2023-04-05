@@ -1,0 +1,26 @@
+<header>
+    <div class="header-navigation">
+        {{ range .Site.Menus.mainmenu}}
+        <li class='visible-lg'><a href="{{.URL}}">{{ .Title}}</a></li>
+        {{ end }}
+    </div>
+    <div>
+        <div class="logo"><img src="/headerleft.jpg"></div>
+        <div class="TopPane clearfix"></div>
+        </div>
+        <div class="header-right">
+            <div>
+                <p>&nbsp;Reinhard Bellessem</p>
+            </div>
+            <br>
+            <div>
+                <p class="pStyle2">&nbsp;Unternehmensberater für Speditions- und Transportbetriebe</p><br>
+            </div>
+            <br>
+            <a href="/kontakt">Impressum</a>
+            <a href="mailto:info@bellessem.de"> info@bellessem.de</a>
+        </div>
+        <br>
+    </div>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</header>

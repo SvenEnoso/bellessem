@@ -1,0 +1,15 @@
+baseURL = "http://example.org/"
+languageCode = "de-de"
+title = "Bellessem Unternehmensberatung"
+[[menu.mainmenu]]
+URL = "/admin"
+name = "Anmelden"
+title = "Anmelden"
+weight = 7
+[params]
+[params.meta]
+author = "www.bellessem.de"
+description = "Unternehmensberater für Speditions- und Transportbetriebe"
+keywords = "Spedition, Beratung, Transport, LKW, ERFA, Berater"
+title = " Reinhard Bellessem - Unternehmensberater für Speditions- und Transportbetriebe"
+copyright = "Copyright (c) 2020 by www.bellessem.de"
