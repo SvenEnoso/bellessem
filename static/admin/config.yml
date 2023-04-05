@@ -40,7 +40,7 @@ collections:
         fields:
           - { label: "Titel", name: "title", widget: "string" }
           - label: "Übersicht Downloads"
-            name: "downloads" 
+            name: "downloads_" 
             widget: "list" 
             summary: '{{fields.title}}' 
             fields:
