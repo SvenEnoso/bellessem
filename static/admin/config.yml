@@ -39,8 +39,8 @@ collections:
           preview: false
         fields:
           - { label: "Titel", name: "title", widget: "string" }
-          - label: "Downloads"
-            name: "downnloads" 
+          - label: "Downloadliste"
+            name: "Downnloads" 
             widget: "list" 
             summary: '{{fields.title}}' 
             fields:
